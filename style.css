@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Global styling */
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.6rem;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navigation styling */
+
+.main-head {
+    background-color: rgb(82, 125, 169);
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 90rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-container {
+    flex: 1 1 45rem;
+}
+
+#logo {
+    height: 100px;
+    padding: 2rem;
+    padding-top: 3rem;
+    box-sizing: content-box;
+    pointer-events: none;
+}
+
