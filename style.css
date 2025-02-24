@@ -11,6 +11,14 @@ html {
 
 /* Global styling */
 
+h2 {
+    font-size: 6.4rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -21,6 +29,22 @@ ul {
     list-style: none;
 }
 
+button {
+    font-size: 2.4rem;
+    padding: 2rem 8rem;
+    border: none;
+    transition: 1s ease-in-out;
+    background-color: rgb(43, 44, 69);
+    color: white
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(43, 44, 69);
+    box-shadow: 5px 5px 15px rgba(43, 44, 69, 0.2), -5px 0px 10px rgba(43, 44, 69, 0.2);;
+}
+
 /* Navigation styling */
 
 .main-head {
@@ -28,6 +52,7 @@ ul {
 }
 
 nav {
+    min-height: 20vh;
     display: flex;
     width: 90%;
     margin: auto;
@@ -42,14 +67,43 @@ nav ul {
 }
 
 #logo-container {
+    display: flex;
+    align-items: center;
     flex: 1 1 45rem;
 }
 
 #logo {
     height: 100px;
-    padding: 2rem;
-    padding-top: 3rem;
     box-sizing: content-box;
     pointer-events: none;
 }
 
+/* Hero section */
+
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(/images/hero-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero h2 {
+    color: rgb(43, 44, 69);;
+}
+
+.hero h3 {
+    padding: 3rem;
+    color: rgb(43, 44, 69);
+}
+
+.hero-wrapper {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.3);
+}
