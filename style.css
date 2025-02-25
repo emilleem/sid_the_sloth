@@ -202,6 +202,9 @@ nav ul {
 }
 
 @media screen and (max-width: 1320px) {
+    html {
+        font-size: 50%;
+    }
     #logo-container {
         justify-content: center;
     }
@@ -210,10 +213,46 @@ nav ul {
         padding-top: 3rem;
         box-sizing: content-box;
     }
+
+}
+
+@media screen and (max-width: 1200px) {
+    #about-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #about-wrapper h2 {
+        font-size: 5rem;
+        text-decoration-thickness: .5rem;
+    }
+
+    #sun {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 450px) {
     nav ul {
         display: none;
+    }
+
+    #about-wrapper {
+        width: 90%;
+    }
+
+    #about-wrapper h2 {
+        font-size: 3rem;
+        text-decoration-thickness: .3rem;
+    }
+
+    #about-wrapper p {
+        font-size: 2rem;
+    }
+
+    #quotes-btn {
+        margin: 2rem
     }
 }
